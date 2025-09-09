@@ -75,6 +75,37 @@ function Square_Pattern(n) {
     }
 }
 
+
+// 7. Diamond_Pattern
+function Diamond_Pattern(n) {
+
+    // upper Triangle
+    for (let i = 1; i <= n; i++) {
+        let st = ""
+        for (let j = 1; j <= n - i; j++) {
+            st += " "
+        }
+        for (let k = 1; k <= i; k++) {
+            st += "*"
+        }
+        for (let l = 1; l < i; l++) {
+            st += "*"
+        }
+        console.log(st)
+    }
+    //lower Triangle
+    for (let i = 1; i <= n; i++) {
+        let st = ""
+        for (let m = 1; m <= i; m++) {
+            st += " "
+        }
+        for (let j = 1; j < (n - i) * 2; j++) {
+            st += "*"
+        }
+        console.log(st)
+    }
+}
+
 // Calling the functions
 console.log("Inverted Right-Angled Triangle");
 Inverted_Right_Angled_Triangle(n);
@@ -93,3 +124,6 @@ Pyramid_Pattern(n);
 
 console.log("\nSquare Pattern");
 Square_Pattern(n);
+
+console.log("\nDiamond Pattern");
+Diamond_Pattern(n)
