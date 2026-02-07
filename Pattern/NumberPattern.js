@@ -19,6 +19,6 @@ function palindromic_pyramid(n) {
             num -= 1
             st += num
         }
-        console.log(st)
+        consolej.log(st)
     }
 }
